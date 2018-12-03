@@ -1,0 +1,29 @@
+.home {
+	padding: 20px;
+	min-height: 100%;
+	width: 100%;
+}
+
+.cardHeader {
+  padding: 16px;
+}
+
+.cardBody {
+  padding: 16px;
+}
+
+/* CONTROLLARE PERCHE' SFANCULA TUTTO */
+.inputText, .col6{
+	margin: 12px;
+}
+/* .inputText{
+	width:95%;
+	display: block;
+	margin: 12px;
+	max-width: 95%;
+}
+
+.col6{
+	width: 45%;
+	margin: 12px;
+} */
