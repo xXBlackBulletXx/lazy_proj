@@ -33,7 +33,8 @@ export default class Header extends Component {
 	};
 
 	goHome = this.linkTo('/');
-	goToMyProfile = this.linkTo('/profile');
+	goToEvents = this.linkTo('/events');
+	goToReports = this.linkTo('/reports');
 
 	toggleDarkTheme = () => {
 		this.setState(
@@ -71,12 +72,16 @@ export default class Header extends Component {
 				<Drawer modal ref={this.drawerRef}>
 					<Drawer.DrawerContent>
 						<Drawer.DrawerItem selected={props.selectedRoute === '/'} onClick={this.goHome}>
-							<List.ItemGraphic>home</List.ItemGraphic>
-							Home
+							<List.ItemGraphic>add_circle</List.ItemGraphic>
+							Aggiunta Eventi
 						</Drawer.DrawerItem>
-						<Drawer.DrawerItem selected={props.selectedRoute === '/profile'} onClick={this.goToMyProfile}>
-							<List.ItemGraphic>account_circle</List.ItemGraphic>
-							Profile
+						<Drawer.DrawerItem selected={props.selectedRoute === '/events'} onClick={this.goToEvents}>
+							<List.ItemGraphic>book</List.ItemGraphic>
+							Lista Eventi
+						</Drawer.DrawerItem>
+						<Drawer.DrawerItem selected={props.selectedRoute === '/reports'} onClick={this.goToReports}>
+							<List.ItemGraphic>assignment_late</List.ItemGraphic>
+							Segnalazioni
 						</Drawer.DrawerItem>
 					</Drawer.DrawerContent>
 				</Drawer>

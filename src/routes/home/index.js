@@ -7,6 +7,7 @@ import TextField from 'preact-material-components/TextField';
 import 'preact-material-components/TextField/style.css';
 import Axios from 'axios';
 import * as _ from 'lodash';
+import { Button } from 'preact-material-components/Button';
 
 export default class Home extends Component {
 	constructor(props){
@@ -48,7 +49,7 @@ export default class Home extends Component {
 							<TextField className={style.col6} type="date" label="Data Fine" name="event_date_finish" outlined onInput={this.onInput.bind(this)}/>
 						</div>
 						<Card.Actions>
-							<Card.ActionButton type="submit">SUBMIT</Card.ActionButton>
+							<Button raised ripple>SUBMIT</Button>
 						</Card.Actions>
 					</form>
 				</Card>

@@ -3,8 +3,9 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 import Home from '../routes/home';
-import Profile from '../routes/profile';
 import NotFound from '../routes/404';
+import Events from '../routes/events';
+import './app.scss';
 // import Home from 'async!../routes/home';
 // import Profile from 'async!../routes/profile';
 
@@ -25,8 +26,7 @@ export default class App extends Component {
 				<Header selectedRoute={this.state.currentUrl}/>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
+					<Events path="/events/" />
           <NotFound default />
 				</Router>
 			</div>
